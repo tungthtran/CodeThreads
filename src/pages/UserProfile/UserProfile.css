@@ -1,0 +1,22 @@
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.user-profile-details {
+    margin-top: 20px;
+}
+
+.user-profile-details p {
+    font-size: 16px;
+    line-height: 2;
+    color: #333;
+}

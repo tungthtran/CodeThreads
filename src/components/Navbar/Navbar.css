@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar > * {
+    margin-left: 75px;
+}
+
+.code-preview {
+    margin-top: 2vh;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}

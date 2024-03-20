@@ -1,0 +1,8 @@
+.reply-form {
+    display: flex;
+    align-items: center;
+}
+
+.reply-form > button {
+    margin-left: 10px;
+}
