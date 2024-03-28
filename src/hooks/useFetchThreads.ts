@@ -17,5 +17,5 @@ export default function useFetchThreads() {
         fetchThreads();
     }, []);
 
-    return threads
+    return threads;
 }

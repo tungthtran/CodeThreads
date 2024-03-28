@@ -6,6 +6,7 @@ import SignIn from "pages/SignIn";
 import "./App.css";
 import UserProfile from "pages/UserProfile";
 import Navbar from "components/Navbar";
+import SignUp from "pages/SignUp";
 
 const App: React.FC = () => {
     const AppLayout = () => {
@@ -28,6 +29,10 @@ const App: React.FC = () => {
                 {
                     path: "/signin",
                     element: <SignIn />,
+                },
+                {
+                    path: "/signup",
+                    element: <SignUp />,
                 },
                 {
                     path: "/thread/:id",
