@@ -12,6 +12,7 @@ type FormFields = {
 
 const SignUp: React.FC = () => {
     const navigate = useNavigate();
+    
     const {
         register,
         handleSubmit,
