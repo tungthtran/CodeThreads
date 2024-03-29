@@ -10,7 +10,7 @@ import "./SignIn.css";
 
 const SignIn: React.FC = () => {
     const dispatch: AppDispatch = useDispatch();
-    
+
     const [username, setUsername] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
@@ -21,9 +21,9 @@ const SignIn: React.FC = () => {
         try {
             const response = await signIn(username, password);
             const accessToken = response?.data?.accessToken;
-            alert("Signed in sucessfully!");
             dispatch(setUser(username));
             dispatch(setAccessToken(accessToken));
+            alert("Signed in sucessfully!");
             navigate("/");
         } catch (error) {
             if (axios.isAxiosError(error)) {

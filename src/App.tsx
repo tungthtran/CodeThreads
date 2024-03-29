@@ -7,6 +7,7 @@ import "./App.css";
 import UserProfile from "pages/UserProfile";
 import Navbar from "components/Navbar";
 import SignUp from "pages/SignUp";
+import ProtectedRoute from "components/ProtectedRoute";
 
 const App: React.FC = () => {
     const AppLayout = () => {
@@ -24,7 +25,11 @@ const App: React.FC = () => {
             children: [
                 {
                     path: "/",
-                    element: <Home />,
+                    element: (
+                        <ProtectedRoute>
+                            <Home />
+                        </ProtectedRoute>
+                    ),
                 },
                 {
                     path: "/signin",
@@ -36,11 +41,19 @@ const App: React.FC = () => {
                 },
                 {
                     path: "/thread/:id",
-                    element: <ThreadDetails />,
+                    element: (
+                        <ProtectedRoute>
+                            <ThreadDetails />
+                        </ProtectedRoute>
+                    ),
                 },
                 {
                     path: "/profile",
-                    element: <UserProfile />,
+                    element: (
+                        <ProtectedRoute>
+                            <UserProfile />
+                        </ProtectedRoute>
+                    ),
                 },
             ],
         },
