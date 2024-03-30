@@ -84,10 +84,10 @@ const SignUp: React.FC = () => {
                 )}
             </div>
             <div className="form-group">
-                <label htmlFor="password">Re-enter password</label>
+                <label htmlFor="passwordRetype">Re-enter password</label>
                 <input
                     {...register("passwordRetype", {
-                        required: "Retype Password is required",
+                        required: "Re-entering password is required",
                         validate: (value) => {
                             const { password } = getValues();
                             return (

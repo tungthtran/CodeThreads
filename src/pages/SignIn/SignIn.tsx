@@ -42,7 +42,7 @@ const SignIn: React.FC = () => {
     };
 
     return (
-        <form className="signin-form">
+        <form className="signin-form" onSubmit={handleSignIn}>
             <div className="form-group">
                 <label htmlFor="username">Username</label>
                 <input
@@ -69,7 +69,7 @@ const SignIn: React.FC = () => {
                 />
             </div>
             <Link to="/signup">New to Threads? Please sign up here.</Link>
-            <Button onClick={handleSignIn}>Sign In</Button>
+            <Button type="submit">Sign In</Button>
         </form>
     );
 };
