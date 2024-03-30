@@ -11,7 +11,7 @@ const initialState: UserProfileState = {
     fullName: "Tung Tran",
     email: "tung.tran@gmail.com",
     phoneNumber: "(+84) 988765876",
-    address: "348 E 48th St, New York NY 10009"
+    address: "348 E 48th St, New York NY 13348"
 }
 
 const userProfileSlice = createSlice({
