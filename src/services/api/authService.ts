@@ -27,3 +27,13 @@ export const signUp = async (username: string, password: string) => {
     const response = await axios.post(`${API_BASE_URL}/register`, data, config);
     return response;
 };
+
+export const refreshAccessToken = async () => {
+    const config = {
+        withCredentials: true,
+    };
+    const response = await axios.get(`${API_BASE_URL}/refresh`, config);
+    const newAccessToken = response.data.accessToken;
+    return newAccessToken;
+}
+
